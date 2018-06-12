@@ -1,0 +1,15 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "ChatBot pour le poto d Amza",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node index.js"
+  },
+  "author": "Thomas Denneulin",
+  "license": "ISC",
+  "dependencies": {
+    "telebot": "^1.2.6"
+  }
+}
