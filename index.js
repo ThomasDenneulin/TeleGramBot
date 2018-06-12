@@ -4,14 +4,6 @@ const TeleBot = require('telebot');
 
 const bot = new TeleBot('618996081:AAGY5hlbwhaE6UHWrrxTSSIu2m9cWpcOvBo');
 
-bot.on('/time', msg => {
-
-    return bot.sendMessage(msg.from.id, 'Getting time...').then(re => {
-        // Start updating message
-        updateTime(msg.from.id, re.message_id);
-    });
-
-});
 
 bot.on('text' , msg => {
     fs.readFile('./config.json','utf8', (err,data) => {
